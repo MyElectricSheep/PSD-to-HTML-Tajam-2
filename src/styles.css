@@ -1,0 +1,413 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  font-family: "Baloo Da 2", cursive;
+  background-color: rgb(211, 207, 207);
+
+  --background: white;
+  --idgreen: rgb(0, 223, 207);
+  --linegrey: rgb(231, 229, 229);
+  --expertisegridborder: 1px solid rgb(231, 229, 229);
+}
+header {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+  min-width: 720px;
+  width: 1200px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: x-large;
+}
+
+h6 {
+  font-weight: bold;
+  color: black;
+  margin: 0 1em;
+}
+
+p {
+  font-family: "Baloo Da 2", cursive;
+  padding: 1% 10% 2%;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+hr {
+  width: 4%;
+  border-top: 1px solid var(--linegrey);
+}
+
+a {
+  color: var(--idgreen);
+  font-size: small;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid var(--idgreen);
+  border-radius: 2px;
+  padding: 0.4em 0.7em 0.1em 0.7em;
+  margin-top: 5em;
+}
+
+section {
+  background-color: var(--background);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(720px, 1200px);
+  grid-template-rows: 2fr 1fr 1.5fr 2fr 2fr 2fr 1fr;
+  grid-template-areas: "intro" "story" "video" "expertise" "team" "contact" "footer";
+  height: 3500px;
+  justify-content: center;
+}
+
+.sub-grid-expertise {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  padding: 5%;
+}
+
+.sub-grid-contact {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 400px 300px;
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 20px;
+  padding-top: 5%;
+}
+
+.flex-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item-team {
+  padding: 4% 2.5%;
+  width: 110px;
+  height: 80px;
+  flex-direction: column;
+}
+
+.form-control {
+  margin-bottom: 1em;
+}
+
+input[type="text"] {
+  height: 1.5em;
+}
+
+input[type="submit"] {
+  color: var(--idgreen);
+  background-color: white;
+  font-size: small;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid var(--idgreen);
+  border-radius: 2px;
+  padding: 0.5em 0.7em 0.5em 0.7em;
+}
+
+::placeholder {
+  font-size: 0.7em;
+  font-family: "Baloo Da 2", cursive;
+}
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: x-small;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: var(--linegrey);
+}
+
+#intro {
+  background-image: url("/src/img/bgk-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 10em;
+}
+
+#intro hr {
+  border-color: var(--idgreen);
+}
+
+#story {
+  text-align: justify;
+  padding: 4% 15% 5% 15%;
+}
+
+#story a {
+  position: relative;
+
+  left: 42.5%;
+}
+
+#story p {
+  color: grey;
+  border: 1px red solid;
+}
+
+#logo {
+  width: 25%;
+  float: left;
+  padding-right: 10%;
+  padding-top: 2em;
+  border: 1px red solid;
+}
+
+#video {
+  background-image: url("/src/img/bgk-middle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#expertise {
+  text-align: center;
+}
+
+#expertise div div {
+  padding: 10% 0;
+}
+
+#expertise h1 {
+  padding-top: 4%;
+  margin-bottom: 0;
+}
+
+#expertise img {
+  padding: 3%;
+}
+
+#expertise p {
+  font-size: x-small;
+  padding: 0.4em 7%;
+  color: grey;
+  margin-top: 0px;
+}
+
+#expertisegrid1 {
+  border-right: var(--expertisegridborder);
+  border-bottom: var(--expertisegridborder);
+}
+
+#expertisegrid2 {
+  border-right: var(--expertisegridborder);
+  border-bottom: var(--expertisegridborder);
+}
+
+#expertisegrid3 {
+  border-bottom: var(--expertisegridborder);
+}
+
+#expertisegrid4 {
+  border-right: var(--expertisegridborder);
+}
+
+#expertisegrid5 {
+  border-right: var(--expertisegridborder);
+}
+
+#team {
+  background-image: url("/src/img/bgk-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+#team h1 {
+  padding-top: 4%;
+  margin-bottom: 0;
+}
+
+#team h6 {
+  padding-top: 4%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+#team p {
+  font-size: x-small;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: grey;
+}
+
+#team img {
+  height: 130px;
+  width: 140px;
+}
+
+#team-element {
+  padding-top: 11%;
+}
+
+.team-border {
+  height: 190px;
+  width: 140px;
+  border: var(--expertisegridborder);
+}
+
+#contact img {
+  width: 100px;
+  padding-bottom: 3em;
+}
+
+#contact .form {
+  width: 340px;
+}
+#contact #contact-flexcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#contact #logosflex {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .formhead + .referenceshead {
+  padding-bottom: 2em;
+}
+
+#footer {
+  background-image: url("/src/img/bgk-footer.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  text-align: justify;
+  padding: 5em 10em;
+}
+
+#footer h6 {
+  color: white;
+  margin-bottom: 3em;
+}
+
+.footer-flexcontainer {
+  min-width: 240px;
+  max-width: 300px;
+}
+
+#footer-logo img {
+  width: 50%;
+}
+
+#footer p {
+  padding: 0 2em 0 0;
+  margin: 0;
+}
+
+#socialmedia img {
+  size: 100px;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: left;
+}
+
+#newsletter [type="text"] {
+  width: 150px;
+}
+
+#newsletter [type="button"] {
+  width: 60px;
+  height: 37px;
+  margin-left: 0.5em;
+  margin-top: 0.05em;
+  opacity: 50%;
+  background: url("/src/footer/paper122.png") no-repeat;
+  background-color: grey;
+  background-size: 30%;
+  background-position: center;
+}
+
+.address {
+  display: flex;
+  padding-bottom: 0.5em;
+}
+
+.address img {
+  padding: 0 0.5em;
+}

@@ -214,7 +214,7 @@ h2 {
 }
 
 #intro {
-  background-image: url("/src/img/bgk-header.png");
+  background-image: url("./src/img/bgk-header.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -262,7 +262,7 @@ h2 {
 }
 
 #video {
-  background-image: url("/src/img/bgk-middle.png");
+  background-image: url("./src/img/bgk-middle.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -325,7 +325,7 @@ h2 {
 }
 
 #team {
-  background-image: url("/src/img/bgk-header.png");
+  background-image: url("./src/img/bgk-header.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -390,7 +390,7 @@ h2 {
 }
 
 #footer {
-  background-image: url("/src/img/bgk-footer.png");
+  background-image: url("./src/img/bgk-footer.png");
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -440,7 +440,7 @@ h2 {
   margin-left: 0.5em;
   margin-top: 0.05em;
   opacity: 50%;
-  background: url("/src/footer/paper122.png") no-repeat;
+  background: url("./src/footer/paper122.png") no-repeat;
   background-color: grey;
   background-size: 30%;
   background-position: center;

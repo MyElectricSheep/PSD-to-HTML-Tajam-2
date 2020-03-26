@@ -73,7 +73,6 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-
   background-color: rgba(255, 255, 255, 0);
   max-width: 1000px;
   min-width: 720px;
@@ -103,6 +102,7 @@ header img {
 
 h1 {
   font-family: "Playfair Display", serif;
+  padding-bottom: 0.5em;
   font-size: x-large;
 }
 
@@ -132,7 +132,6 @@ a {
   border: 1px solid var(--idgreen);
   border-radius: 2px;
   padding: 0.4em 0.7em 0.1em 0.7em;
-  margin-top: 5em;
 }
 
 a:hover,
@@ -227,7 +226,7 @@ h2 {
 }
 
 #intro-content {
-  padding: 6em 10em;
+  padding: 6em 10em 2em;
 }
 
 #intro hr {
@@ -235,27 +234,31 @@ h2 {
 }
 
 #story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+#story-content {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+
+#ourstory h1 {
+  padding-left: 2em;
+}
+
+#ourstory p {
+  max-width: 500px;
   text-align: justify;
-  padding: 4% 15% 5% 15%;
-}
-
-#story a {
-  position: relative;
-
-  left: 42.5%;
-}
-
-#story p {
-  color: grey;
-  border: 1px red solid;
 }
 
 #logo {
   width: 25%;
-  float: left;
-  padding-right: 10%;
-  padding-top: 2em;
-  border: 1px red solid;
 }
 
 #video {
@@ -303,6 +306,10 @@ h2 {
 #expertisegrid2 {
   border-right: var(--expertisegridborder);
   border-bottom: var(--expertisegridborder);
+}
+
+#expertisegrid2 h6 {
+  padding-top: 0.6em;
 }
 
 #expertisegrid3 {
@@ -388,9 +395,11 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   color: white;
   text-align: justify;
   padding: 5em 10em;
+  flex-wrap: wrap;
 }
 
 #footer h6 {
@@ -444,4 +453,16 @@ h2 {
 
 .address img {
   padding: 0 0.5em;
+}
+
+#final {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3em;
+  min-width: 720px;
+}
+
+#final p {
+  padding: initial;
 }
